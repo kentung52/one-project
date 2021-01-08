@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Favorite Movies</title>
+    <link rel="stylesheet" href="assets/styles/app.css" />
+    <link rel="stylesheet" href="">
+	<!-- Core Navigation -->
+	<link rel="stylesheet" href="/assets/js/corenav-master/corenav-master/dist/coreNavigation-1.1.3.min.css">
+	<!-- Navbar Style -->
+	<link rel="stylesheet" href="/assets/css/navbar-style.css">
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css">
+	<!-- Owl Carousel -->
+	<link rel="stylesheet" href="/assets/css/owl.carousel.min.css">
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="/assets/css/animate.css">
+	<!-- Line Icons -->
+	<link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+	<!-- LightBox -->
+	<link rel="stylesheet" href="/assets/js/lightbox/dist/css/lightbox.min.css">
+	<!-- Style -->
+	<link rel="stylesheet" href="/assets/css/style.css">
+	<link rel="stylesheet" href="/DROPDOWN.css">
+	
+
+    <script src="assets/scripts/app.js" defer></script>
+  </head>
+  <body>
+    <li class="nav-item active">
+      <a class="nav-link" href="/index.html">Home <span class="sr-only"></span></a>
+    </li>
+    <div id="backdrop"></div>
+    <div class="modal card" id="add-modal">
+      <div class="modal__content">
+        <label for="title">Movie Title</label>
+        <input type="text" name="title" id="title" />
+        <label for="image-url">Image URL</label>
+        <input type="text" name="image-url" id="image-url" />
+        <label for="rating">Your Rating</label>
+        <input
+          type="number"
+          step="1"
+          max="5"
+          min="1"
+          name="rating"
+          id="rating"
+        />
+      </div>
+      <div class="modal__actions">
+        <button class="btn btn--passive">Cancel</button>
+        <button class="btn btn--success">Add</button>
+      </div>
+    </div>
+    <div class="modal card" id="delete-modal">
+      <h2 class="modal__title">Are you sure?</h2>
+      <p class="modal__content">
+        Are you sure you want to delete this item? This action can't be made
+        undone!
+      </p>
+      <div class="modal__actions">
+        <button class="btn btn--passive">No (Cancel)</button>
+        <button class="btn btn--danger">Yes</button>
+      </div>
+    </div>
+
+    <header>
+      <h1>Favorite Movies</h1>
+      <button>ADD MOVIE</button>
+    </header>
+
+    <main>
+      <section id="entry-text" class="card">
+        <p>Your personal movie database!</p>
+      </section>
+      <ul id="movie-list">
+        
+      </ul>
+    </main>
+  </body>
+</html>
